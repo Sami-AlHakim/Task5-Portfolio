@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 5</title>
+
+  <script>
+    //Check LocalStorage
+    let localS = localStorage.getItem('theme');
+
+    let localLogo = localStorage.getItem('logo');
+
+    if (localS === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light')
+    }
+  </script>
+
+  <!-- Linking to Bootstrap Library -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+<!-- Linking to Main Style File -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Link to Google Fonts Library -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- link to Font Awesome Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="web-container">
+    <nav class="navbar py-4">
+      <div class="container d-flex align-items-center justify-content-center">
+        <a href="#hero">
+          <img src="./assets/Images/logo-d.png" alt="ASH Logo" class="nav-logo" id="black-logo">
+          <img src="./assets/Images/logo.png" alt="ASH Logo" class="nav-logo" id="white-logo">
+        </a>
+        <div class="menu-holder">
+          <i class="fa-solid fa-xmark" id="xmark"></i>
+          <ul class="nav-menu m-0 p-0" id="one">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+          <ul class="nav-menu m-0 p-0" id="two">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#client">Client</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars ms-2" id="menu-btn"></i>
+      </div>
+      
+      <div id="theme-switcher">
+        <i class="fa-solid fa-sun" id="sun-icon"></i>
+        <i class="fa-solid fa-moon" id="moon-icon"></i>
+      </div>
+    </nav>
+    
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="text-holder">
+          <h1>I'm Sami AL-Hakim</h1>
+          <p>I'm Web Developer calling my self ASH, I live in Damascus</p>
+          <a href="#portfolio" class="btn">View My Work </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <h2 class="main-title-1">My Services</h2>
+      <div class="container">
+        <div class="card gap-3 align-items-start">
+          <div class="icon "><i class="fa-solid fa-mobile"></i></div>
+          <div class="text">
+            <h3>UI / UX Designer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate inventore numquam tempora quas libero culpa rem delectus, omnis harum nesciunt sit eveniet voluptates repudiandae.
+            </p>
+          </div>
+        </div>
+        <div class="card gap-3 align-items-start">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <div class="text">
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate inventore numquam tempora quas libero culpa rem delectus, omnis harum nesciunt sit eveniet voluptates repudiandae.
+            </p>
+          </div>
+        </div>
+        <div class="card gap-3 align-items-start">
+          <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="text">
+            <h3>Brand & Logo Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate inventore numquam tempora quas libero culpa rem delectus, omnis harum nesciunt sit eveniet voluptates repudiandae.
+            </p>
+          </div>
+        </div>
+        <div class="card gap-3 align-items-start">
+          <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+          <div class="text">
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate inventore numquam tempora quas libero culpa rem delectus, omnis harum nesciunt sit eveniet voluptates repudiandae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="main-title-2">About Me</h2>
+        <div class="text-holder d-flex gap-3 flex-column flex-lg-row">
+          <div class="first-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati nobis aliquam deleniti sit quae nostrum quaerat, ea vero sed? Assumenda consectetur deserunt ad quaerat amet, quis impedit aliquid quos?
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati nobis aliquam deleniti sit quae nostrum quaerat, ea vero sed? Assumenda consectetur deserunt ad quaerat amet, quis impedit aliquid quos?
+            </p>
+          </div>
+          <img src="./assets/Images/a51571f152b23393d33f3ed7ae3d3f7e.png" class="w-25">
+          <div class="second-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati nobis aliquam deleniti sit quae nostrum quaerat, ea vero sed? Assumenda consectetur deserunt ad quaerat amet, quis impedit aliquid quos?
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati nobis aliquam deleniti sit quae nostrum quaerat, ea vero sed? Assumenda consectetur deserunt ad quaerat amet, quis impedit aliquid quos?
+            </p>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="main-title-1">Portfolio</h2>
+        <div class="cards-holder">
+          <div class="card">
+            <img src="./assets/Images/post_2.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" card">
+            <img src="./assets/Images/post_3.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" card">
+            <img src="./assets/Images/post_4.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" card">
+            <img src="./assets/Images/post_5.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" card">
+            <img src="./assets/Images/post_6.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" card">
+            <img src="./assets/Images/post_2.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" card">
+            <img src="./assets/Images/post_3.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" card">
+            <img src="./assets/Images/post_4.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" card">
+            <img src="./assets/Images/post_5.jpg.webp" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testi section">
+      <h2 class="main-title-2">Testimonials</h2>
+      <div class="container">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="pb-3 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates non temporibus saepe minima placeat asperiores explicabo? Id placeat excepturi provident fugiat vero sequi veritatis maiores dolores culpa ratione.
+              </p>
+              <h6 class="pb-3 text-center">-Jean Smith</h6>
+            </div>
+            <div class="carousel-item">
+              <p class="pb-3 text-center">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic reprehenderit et maxime nisi, voluptas est cum necessitatibus minus deserunt, saepe doloremque quam sunt iste laboriosam excepturi unde officia ab nostrum!
+              </p>
+              <h6 class="pb-3 text-center">-Carl Spencer</h6>
+            </div>
+            <div class="carousel-item">
+              <p class="pb-3 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque enim voluptate facere hic alias minima ad consequuntur officia dolorum libero.
+              </p>
+              <h6 class="pb-3 text-center">-Ryan Peters</h6>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="client section" id="client">
+      <h2 class="main-title-1">Client</h2>
+      <div class="container row w-75 mx-auto">
+        <div class="logo col-6 col-md-4">
+          <img src="./assets/Images/logo-1-g.png" alt="">
+        </div>
+        <div class="logo col-6 col-md-4">
+          <img src="./assets/Images/logo-2-g.png" alt="">
+        </div>
+        <div class="logo col-6 col-md-4">
+          <img src="./assets/Images/logo-3-g.png" alt="">
+        </div>
+        <div class="logo col-6 col-md-4">
+          <img src="./assets/Images/logo-4.png" alt="">
+        </div>
+        <div class="logo col-6 col-md-4">
+          <img src="./assets/Images/logo-5-g.png" alt="">
+        </div>
+        <div class="logo col-6 col-md-4">
+          <img src="./assets/Images/logo-6-g.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <h2 class="main-title-1">Contact Me</h2>
+      <div class="container">
+        <form action="#" class="w-100" onsubmit="submitFunction(userInfo, event)">
+          <input type="text" name="First-Name" id="first-name" class="ps-2 pb-2 mb-5" placeholder="First name">
+          <input type="text" name="Last-Name" id="last-name" class="ps-2 pb-2 mb-5" placeholder="Last name">
+          <input type="email" name="Email" id="email" class="w-100 ps-2 pb-2 mb-5" placeholder="Email address">
+          <input type="text" name="subject" id="subject" class="w-100 ps-2 pb-2 mb-5" placeholder="Subject of the message">
+          <textarea name="message" id="message" class="w-100 ps-2 pb-2 mb-5" placeholder="Type your message here..."></textarea>
+          <input type="submit" value="Send Message" id="submit-btn" class="px-3 py-2">
+        </form>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="container">
+        <div class="links-holder d-flex justify-content-between mb-5">
+          <div class="address">
+            <h6 class="mb-4">My Address</h6>
+            <p>Rief Dimaschq, Qudsaia</p>
+          </div>
+          <div class="f-services">
+            <h6 class="mb-4">Services</h6>
+            <ul>
+              <li class="mb-1"><a href="#">Web App</a></li>
+              <li class="mb-1"><a href="#">Graphic Design</a></li>
+              <li class="mb-1"><a href="#">Branding</a></li>
+            </ul>
+          </div>
+          <div class="f-resources">
+            <h6 class="mb-4">Resources</h6>
+            <ul>
+              <li class="mb-1"><a href="#">Web App</a></li>
+              <li class="mb-1"><a href="#">Graphic Design</a></li>
+              <li class="mb-1"><a href="#">Branding</a></li>
+            </ul>
+          </div>
+          <div class="f-links">
+            <h6 class="mb-4">Links</h6>
+            <ul>
+              <li class="mb-1"><a href="#">Web App</a></li>
+              <li class="mb-1"><a href="#">Graphic Design</a></li>
+              <li class="mb-1"><a href="#">Branding</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <h6 class="mb-4">Follow Me</h6>
+            <div class="icons-holder">
+              <a href="https://www.facebook.com/profile.php?id=100008788479472" target="_blank" class="me-1 facebook"><i class="fa-brands fa-square-facebook"></i></a>
+
+              <a href="https://instagram.com/ashl_73?igshid=ZDdkNTZiNTM=  " target="_blank" class="me-1 insta"><i class="fa-brands fa-square-instagram"></i></a>
+
+              <a href="https://www.linkedin.com/in/sami-al-hakim-1a117224a/" target="_blank" class="me-1 in"><i class="fa-brands fa-linkedin"></i></a>
+
+              <a href="https://github.com/Sami-AlHakim" target="_blank" class="me-1 git"><i class="fa-brands fa-square-github"></i></a>
+
+              <a href="https://www.behance.net/ASH73" target="_blank" class="me-1 behance"><i class="fa-brands fa-square-behance"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center"> 
+          Copyright &copy; 2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <span>ASH</span>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="./assets/js/script.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

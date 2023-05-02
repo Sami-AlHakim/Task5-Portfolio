@@ -451,10 +451,6 @@ footer p span {
 
 /* Responsive */
 @media screen and (max-width: 992px) {
-  .navbar:hover {
-    background-color: transparent;
-    box-shadow: none;
-  }
   .menu-holder {
     width: 250px;
     height: 100vh;
